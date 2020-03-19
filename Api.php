@@ -27,8 +27,8 @@ class Api{
             'kekupdate' => 'GET',
             'kekshow' => 'POST'
         );
-        $this->requestUri = explode('/', trim($_SERVER['REQUEST_URI'],'/'));
-        $this->requestParams = $_REQUEST;
+        // $this->requestUri = explode('/', trim($_SERVER['REQUEST_URI'],'/'));
+        // $this->requestParams = $_REQUEST;
     }
 
     public function run(){
@@ -123,6 +123,6 @@ class Api{
     }
 }
 
-$api = new Api('users',$articles);
+$api = new Api('users',$methods);
 $api->run();
 ?>

@@ -34,7 +34,7 @@ class DB {
  }
 
 
-class Articles{
+class DBmethods{
     public function allrecords()
     {
         $sql = 'SELECT * FROM test1';
@@ -154,7 +154,7 @@ class Users{
     }
 }
 
-$articles = new Articles();
+$methods = new DBmethods();
 $users = new Users();
 
 
